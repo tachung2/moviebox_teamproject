@@ -4,6 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+function sum(a, b) {
+  return a + b;
+}
+function withdraw(account, amount) {
+  account.total -= amount;
+}
+
 function tick() {
   const element = (
     <div>
@@ -16,5 +23,3 @@ ReactDOM.render(
   element,
   document.getElementById('root'));
 }
-
-setInterval(tick,1000);
