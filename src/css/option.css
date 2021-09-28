@@ -36,7 +36,6 @@ div {
     display: block;
     float: left;
     margin-left: 10px;
-    vertical-align: top;
 }
 
 .login>a:link {
@@ -96,7 +95,8 @@ ol {
 
 .ranktext {
     color: #fff;
-    margin: 50px;
+    font-size: 30px;
+    margin-left: 20px;
 }
 
 .ranking {
@@ -126,12 +126,8 @@ div {
 
 .rectext {
     color: #fff;
-    margin: 60px;
-}
-
-.rectext>h1 {
-    color: #fff;
-    margin: 60px;
+    font-size: 30px;
+    margin-left: 20px;
 }
 
 .rec>ol {
