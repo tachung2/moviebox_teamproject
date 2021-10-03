@@ -1,0 +1,28 @@
+body {
+    background-color: #CCEEFF;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+}
+
+.logo>img {
+    margin-left: 20px;
+}
+
+.logo>h1 {}
+
+.menu {
+    display: flex;
+    margin-left: 300px;
+    background-color: #263343;
+    padding: 15px 10px;
+    align-items: center;
+}
+
+.menu>a {
+    color: #fff;
+    font-size: 25px;
+    justify-content: space-between;
+}
