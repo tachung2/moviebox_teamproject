@@ -14,14 +14,61 @@
         <div class="logo">
             <img src="png/로고.png" height="100" width="100">
         </div>
+    </div>
 
-        <div class="menu">
-            <li><a href="">home</a></li>
-            <li><a href="">menu2</a></li>
-            <li><a href="">menu3</a></li>
-            <li><a href="">menu4</a></li>
+    <div class="ranktext">
+        <h1>영화 순위</h1>
+    </div>
+    <!--첫 번째를 기준으로 리스트를 사용해서 4번 루프시킴-->
+    <div class="ranking">
+        <input type="radio" name="slide" id="slide01" checked>
+        <input type="radio" name="slide" id="slide02">
+        <input type="radio" name="slide" id="slide03">
 
+        <div class="slidewrap">
+            <ul class="slidelist">
+                <li>
+                    <a class=r 1>
+                        <label for="slide03" class="left"></label>
+                        <img src="png/오징어게임.jpg" alt="Image">
+
+                        <div class="overview">
+                            <h3>줄거리</h3>
+                            hello
+                        </div>
+                        <label for="slide02" class="right"></label>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <label for="slide01" class="left"></label>
+                        <img src="png/로고.png" alt="Image">
+                        <label for="slide03" class="right"></label>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <label for="slide02" class="left"></label>
+                        <img src="png/로고.png" alt="Image">
+                        <label for="slide01" class="right"></label>
+                    </a>
+                </li>
+            </ul>
         </div>
+
+    </div>
+    <div class=rectext>
+        <h1>영화추천</h1>
+    </div>
+    <!--첫 번째를 기준으로 리스트를 사용해서 4번 루프시킴-->
+    <div class="rec">
+        <ol class="list">
+            <li name="movie_rec" class="first" style="display: list-item;"></li>
+            <li name="movie_rec" class style="display: list-item;"></li>
+            <li name="movie_rec" class style="display: list-item;"></li>
+            <li name="movie_rec" class style="display: list-item;"></li>
+            <li name="movie_rec" class style="display: list-item;"></li>
+        </ol>
     </div>
 
 

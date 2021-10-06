@@ -11,18 +11,88 @@ body {
     margin-left: 20px;
 }
 
-.logo>h1 {}
-
-.menu {
-    display: flex;
-    margin-left: 300px;
-    background-color: #263343;
-    padding: 15px 10px;
-    align-items: center;
+.ranking input[id*="slide"] {
+    display: none;
 }
 
-.menu>a {
-    color: #fff;
-    font-size: 25px;
-    justify-content: space-between;
+.ranking .slidewrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.ranking .slidelist {
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.ranking .slidelist>li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .5s;
+}
+
+.ranking .slidelist>li>a {
+    display: block;
+    position: relative;
+}
+
+.ranking .slidelist>li>a img {
+    width: 100%;
+}
+
+.ranking .slidelist label {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px;
+    cursor: pointer;
+}
+
+.ranking .slidelist .left {
+    left: 30px;
+    background: url('./left.png') center center / 100% no-repeat;
+}
+
+.ranking .slidelist .right {
+    right: 30px;
+    background: url('./right.png') center center / 100% no-repeat;
+}
+
+.ranking input[id="slide01"]:checked~.slidewrap .slidelist>li {
+    transform: translate(0%);
+}
+
+.ranking input[id="slide02"]:checked~.slidewrap .slidelist>li {
+    transform: translate(-100%);
+}
+
+.ranking input[id="slide03"]:checked~.slidewrap .slidelist>li {
+    transform: translate(-200%);
+}
+
+.overview {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    padding: 1rem;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.r {
+    position: relative;
+    overflow: hidden;
+}
+
+.r1:hover .overview {
+    transform: translateY(0)
 }
