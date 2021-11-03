@@ -1,0 +1,19 @@
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+    height: 10px;
+    background-color: greenyellow;
+    block-size: inherit;
+}
+
+.menu a {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover {
+    background-color: yellow;
+}

@@ -1,66 +1,39 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>moviebox</title>
-    <link rel="stylesheet" href="css/option.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/section">
+    <title>MovieBox</title>
 </head>
 
 <body>
-    <!--위에 부분과 나눔-->
-    <div id="header">
-        <!--로고 띄우기 전-->
-        <div class="logo">
-            <h1>Logo</h1>
+    <script scr="API.js"></script>
+    <header>
+        <div class="l_container">
+            <a href="main.html">
+                <img src="png/로고.png" height="100" width="100">
+                <h1>Moviebox</h1>
+            </a>
         </div>
-        <!--오른쪽 상단에 로그인창-->
-        <div class="login" style>
-            <a href="" title="로그인">로그인</a>
-            <a href="" title="회원가입">회원가입</a>
+        <div class="loginbox">
+            <a href="">login</a>
         </div>
-        <!--텍스트 형식의 메뉴 이미지로 교체 가능성 있음-->
-        <div class="menu" style>
-            <a href="" title="menu1">menu1</a>
-            <a href="" title="menu2">menu2</a>
-            <a href="" title="menu3">menu3</a>
-            <a href="" title="menu4">menu4</a>
+    </header>
+    <nav>
+        <div class="menu">
+            <a href="">영화분석</a>
+            <a href="">영화리스트</a>
         </div>
-    </div>
+    </nav>
+    <section>
 
-    <!--영화순위 텍스트-->
-    <div class="ranktext">
-        <h1>영화 순위</h1>
-    </div>
-    <!--첫 번째를 기준으로 리스트를 사용해서 4번 루프시킴-->
-    <div class="ranking">
-        <ol class="list">
-            <li name="movie_rank" class="first" style="display: list-item;"></li>
-            <li name="movie_rank" class style="display: list-item;"></li>
-            <li name="movie_rank" class style="display: list-item;"></li>
-            <li name="movie_rank" class style="display: list-item;"></li>
-            <li name="movie_rank" class style="display: list-item;"></li>
-        </ol>
-    </div>
-
-    <!--영화 추천 텍스트-->
-    <div class=rectext>
-        <h1>영화추천</h1>
-    </div>
-
-    <!--첫 번째를 기준으로 리스트를 사용해서 4번 루프시킴-->
-    <div class="rec">
-        <ol class="list">
-            <li name="movie_rec" class="first" style="display: list-item;"></li>
-            <li name="movie_rec" class style="display: list-item;"></li>
-            <li name="movie_rec" class style="display: list-item;"></li>
-            <li name="movie_rec" class style="display: list-item;"></li>
-            <li name="movie_rec" class style="display: list-item;"></li>
-        </ol>
-    </div>
-
+    </section>
+    <footer></footer>
 </body>
 
 </html>
