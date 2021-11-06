@@ -7,12 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/section">
+    <link rel="stylesheet" href="css/section.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="youtube.js"></script>
+
     <title>MovieBox</title>
 </head>
 
 <body>
-    <script scr="API.js"></script>
+    <script src="API.js"></script>
     <header>
         <div class="l_container">
             <a href="main.html">
@@ -31,7 +36,33 @@
         </div>
     </nav>
     <section>
-
+        <div class="rate">
+            <p>영화순위</p>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!--슬라이드-->
+                <div class="swiper-slide">
+                    <div id="player1"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="player2"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="player3"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="player4"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="player5"></div>
+                </div>
+            </div>
+            <!--페이지네이션 및 좌,우 버튼-->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </section>
     <footer></footer>
 </body>
