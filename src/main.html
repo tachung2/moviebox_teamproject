@@ -8,10 +8,15 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/section.css">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="TMDB.js"></script>
+    <script type="text/javascript" src="youtube.js"></script>
+    <script type="text/javascript" src="modal.js"></script>
+
 
     <title>MovieBox</title>
 </head>
@@ -25,7 +30,28 @@
             </a>
         </div>
         <div class="loginbox">
-            <a href="">login</a>
+            <div id="login" class="modal">
+                <h1>로그인</h1>
+                <div class="container">
+                    <div class="login-form">
+                        <form id="id" method="get">
+                            <input type="text" name="id" class="id" maxlength="12" placeholder="아이디"><br>
+                            <input type="password" name="password" class="pw" maxlength="18" placeholder="비밀번호">
+                        </form>
+                        <form id="btn" method="get">
+                            <input type="submit" class="submit-btn" value="로그인">
+                        </form>
+                    </div>
+                    <div class="save">
+                        <form id="save">
+                            <input type="checkbox" value="1" text-align="center">아이디 저장
+                        </form>
+                        <a href="" class="register">회원가입</a>
+                    </div>
+                </div>
+            </div>
+            <p><a href="#login" rel="modal:open">로그인</a></p>
+
         </div>
     </header>
     <nav>
@@ -38,21 +64,18 @@
         <div class="rate">
             <p>영화순위</p>
         </div>
-        <div id="video-swiper" class="swiper-container">
-            <div class="swiper-wrapper">
-                <!--슬라이드-->
-                <main id="main">
+        <div class=wrap>
+            <div id="video-swiper" class="swiper-container">
+                <div id="main" class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="video-container">
-                            <div class="yt-player" data-id="9lTEtAgVynU"></div>
-                        </div>
+                        <iframe width="500" height="400" src="https://www.youtube.com/embed/a3ICNMQW7Ok?enablejsapi=1&rel=0" frameborder="0" allowfullscreen></iframe>
                     </div>
-                </main>
-
-
+                    <div class="swiper-slide">
+                        <iframe width="500" height="400" src="https://www.youtube.com/embed/a3ICNMQW7Ok?enablejsapi=1&rel=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
             <!--페이지네이션 및 좌,우 버튼-->
-            <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>

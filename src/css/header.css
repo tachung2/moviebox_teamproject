@@ -1,28 +1,19 @@
-body {
-    background-image: url("https://file.mk.co.kr/meet/yonhap/2021/10/23/image_readmed_2021_1004045_1_080111.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    backdrop-filter: blur(8px);
-    height: 100vh;
-    width: 100%;
-}
-
 header {
     display: flex;
 }
 
 .l_container {
     display: inline-block;
-    margin-left: 47%
+    margin-left: 45%
 }
 
 .l_container a {
-    text-decoration-line: none;
+    text-decoration: none;
     color: black;
 }
 
 .l_container a:visited {
-    text-decoration-line: none;
+    text-decoration: none;
     color: black;
 }
 
@@ -37,4 +28,46 @@ header {
 .loginbox {
     display: inline-block;
     margin-left: 40%;
+}
+
+.loginbox a {
+    text-decoration: none;
+    color: black;
+}
+
+.loginbox a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.login-form {
+    display: flex;
+}
+
+#btn {
+    margin-left: 10px;
+}
+
+#btn>input {
+    height: 50px;
+}
+
+.save {
+    display: flex;
+}
+
+#save {
+    margin-left: -4px;
+}
+
+.save a {
+    margin-top: 10px;
+    margin-left: 75px;
+    text-decoration: none;
+    color: black;
+}
+
+.save a:visited {
+    text-decoration: none;
+    color: black;
 }

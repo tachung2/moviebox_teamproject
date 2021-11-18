@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/section.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="youtube.js"></script>
+    <script type="text/javascript" src=".js"></script>
+
+    <title>MovieBox</title>
+</head>
+
+<body>
+    <script src="API.js"></script>
+    <header>
+        <div class="l_container">
+            <a href="main.html">
+                <img src="png/로고.png" height="100" width="100">
+                <h1>Moviebox</h1>
+            </a>
+        </div>
+        <div class="loginbox">
+            <a href="">login</a>
+        </div>
+    </header>
+    <nav>
+        <div class="menu">
+            <a href="">영화분석</a>
+            <a href="">영화리스트</a>
+        </div>
+    </nav>
+    <section>
+        <div class="rate">
+            <p>영화순위</p>
+        </div>
+        <div id="video-swiper" class="swiper-container">
+            <div class="swiper-wrapper">
+                <!--슬라이드-->
+
+                < <div class="swiper-slide">
+                    <div class="video-container">
+                        <div class="yt-player" data-id="9lTEtAgVynU" id="pl1"></div>
+                    </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="video-container">
+                    <div class="yt-player" data-id="F50yfwMmAAc" id="pl2"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="video-container">
+                    <div class="yt-player" data-id="5LI1PysAlkU" id="pl3"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="video-container">
+                    <div class="yt-player" data-id="3vpUarAbmFI" id="pl4"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="video-container">
+                    <div class="yt-player" data-id="oLS63U5MX2g" id="pl5"></div>
+                </div>
+            </div>
+        </div>
+        <!--페이지네이션 및 좌,우 버튼-->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>
