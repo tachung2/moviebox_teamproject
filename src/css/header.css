@@ -44,6 +44,10 @@ header {
     display: flex;
 }
 
+.login-form img {
+    margin-left: 17px;
+}
+
 #btn {
     margin-left: 10px;
 }
@@ -71,3 +75,14 @@ header {
     text-decoration: none;
     color: black;
 }
+
+.register-form a {
+    text-decoration: none;
+    color: black;
+}
+
+.register-form a:visited {
+    text-decoration: none;
+    color: black;
+}
+

@@ -15,13 +15,14 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="TMDB.js"></script>
     <script type="text/javascript" src="youtube.js"></script>
-    <script type="text/javascript" src="modal.js"></script>
 
 
     <title>MovieBox</title>
 </head>
 
 <body>
+    <div class="bg">
+    </div>
     <header>
         <div class="l_container">
             <a href="main.html">
@@ -41,18 +42,34 @@
                         <form id="btn" method="get">
                             <input type="submit" class="submit-btn" value="로그인">
                         </form>
+                        <img src="png/eniac.png" width="200px" height="60px">
                     </div>
                     <div class="save">
                         <form id="save">
                             <input type="checkbox" value="1" text-align="center">아이디 저장
                         </form>
-                        <a href="" class="register">회원가입</a>
+                        <p><a href="#register" rel="modal:open">회원가입</a></p>
                     </div>
                 </div>
             </div>
             <p><a href="#login" rel="modal:open">로그인</a></p>
+            <div id="register" class="modal">
+                <h1>회원가입</h1>
+                <div class="container">
+                    <div class="register-form">
+                        <form id="re" method="get">
+                            <input type="text" name="id" class="id" maxlength="12" placeholder="아이디" /> <br>
+                            <input type="password" name="password" class="pw" maxlength="18" placeholder="비밀번호" /><br>
+                            <input type="text" name="email" placeholder="이메일 입력해주세요" /> <br>
+                        </form>
+                        <p><a href="#login" rel="modal:open">가입하기</a></p>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
+
     </header>
     <nav>
         <div class="menu">
@@ -67,9 +84,6 @@
         <div class=wrap>
             <div id="video-swiper" class="swiper-container">
                 <div id="main" class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <iframe width="500" height="400" src="https://www.youtube.com/embed/a3ICNMQW7Ok?enablejsapi=1&rel=0" frameborder="0" allowfullscreen></iframe>
-                    </div>
                     <div class="swiper-slide">
                         <iframe width="500" height="400" src="https://www.youtube.com/embed/a3ICNMQW7Ok?enablejsapi=1&rel=0" frameborder="0" allowfullscreen></iframe>
                     </div>

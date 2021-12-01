@@ -13,6 +13,7 @@ function getMovies(url) {
     })
 }
 
+
 function showMovies(movies) {
     document.getElementById('main').innerHTML = '';
 

@@ -13,7 +13,7 @@
 .wrap {
     position: relative;
     width: 1500px;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 .wrap .swiper-slide {
@@ -39,4 +39,10 @@
     border-radius: 50%;
     width: 40px;
     height: 40px;
+}
+
+@media only screen and (min-width: 460px) {
+    .wrap {
+        width: 100%;
+    }
 }

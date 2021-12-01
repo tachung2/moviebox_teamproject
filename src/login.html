@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div id="login" class="modal">
+        <h1>로그인</h1>
+        <div class="container">
+            <div class="login-form">
+                <form action="/user/login" method="post">
+                    <input type="text" name="id" class="id" maxlength="12" placeholder="아이디"><br>
+                    <input type="password" name="password" class="pw" maxlength="18" placeholder="비밀번호">
+                </form>
+                <form id="btn" method="get">
+                    <input type="submit" class="submit-btn" value="로그인">
+                </form>
+                <img src="png/eniac.png" width="200px" height="60px">
+            </div>
+            <div class="save">
+                <form id="save">
+                    <input type="checkbox" value="1" text-align="center">아이디 저장
+                </form>
+                <p><a href="#register">회원가입</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
